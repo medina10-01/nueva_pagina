@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pomodoro.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <title>pomodoro-app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="txt-title tipografia-3">Pomodoro</h1>
+        </div>
+        <div class="box-menu center-between">
+            <div id="boxPomodoro" class="box-pomodoro select">
+                <h2>Pomodoro</h2>
+            </div>
+            <div id="boxChronometer" class="box-short">
+                <h2>Chronometer</h2>
+            </div>
+            <div id="boxLong" class="box-long">
+                <h2>Local time</h2>
+            </div>
+        </div>
+        <div class="relog_grid">
+            <div class="box-relog border-radius">
+                <div class="box-cap-extern border-radius center">
+                    <div class="box-cap-intern border-radius center">
+                        <div class="box-intern">
+                            <!-- para el pomodoro -->
+                                <div id="circularPomodoro" class="">
+                                    <div  class="circular-progress">
+                                        <div class="center">
+                                            <div class="progress-minutes">25:</div>
+                                            <span class="progress-seconds">00</span>
+                                        </div>
+                                        <div class="box-accion">
+                                            <div id="btnStart" class="box-int">
+                                                <p class="accion">Start</p>
+                                            </div>
+                                            <div id="btnRestar" class="box-restart none">
+                                                <p class="accion">Restart</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- para el cronometro -->
+                                <div id="circularChronometer" class="none">
+                                    <div  class="circular-chronometer none">
+                                        <div class="center">
+                                            <div class="chronometer-mins">00:</div>
+                                            <span class="chronometer-seg">00</span>
+                                        </div>
+                                        <div class="box-accion">
+                                            <div id="btnGo" class="box-int">
+                                                <p class="accion">Start</p>
+                                            </div>
+                                            <div class="none box-restar" id="btnStop">
+                                                <p class="accion">stop</p>
+                                            </div>
+                                            <div id="btnClear" class="box-restart none">
+                                                <p class="accion">Clear</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- horas espacio -->
+                                <div id="circularHour" class="none">
+                                    <div  class="circular-hour none">
+                                        <div class="center">
+                                            <div id="tiempo">12:00:00 PM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="optionConfig" class="config center">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+    <div id="boxConfig" class="box-config center none">
+        <div class="config-container">
+            <div class="box-config-title between">
+                <p class="config-title color">Settings</p>
+                <div id="exitConfig"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="box-config-body">
+                <p class="box-title-body">TIME (MINUTES)</p>
+                <div class="config-pomodoro">
+                    <div class="between config-time">
+                        <div class="box-time-pomodoro">
+                            <label for="pomodoro">Pomodoro</label>
+                            <input type="number" name="pomodoro" id="pomodoro" placeholder="25">
+                        </div>
+                        <div class="box-time-short">
+                            <label for="short">Short breack</label>
+                            <input type="number" name="short" id="short" value="5">
+                        </div>
+                        <div class="box-time-long">
+                            <label for="long">Long breack</label>
+                            <input type="number" name="long" id="long" value="10">
+                        </div>
+                    </div>
+                    <div class="between config-font">
+                        <p class="font-title">FONT</p>
+                        <div class="option-font between">
+                            <div class="txt-1">Aa</div>
+                            <div class="txt-2">Aa</div>
+                            <div class="txt-3">Aa</div>
+                        </div>
+                    </div>
+                    <div class="between color-config">
+                        <p class="title-color">COLOR</p>
+                        <div class="option-color between">
+                            <div class="bg-color-1 color center"></div>
+                            <div class="bg-color-2 color center"></div>
+                            <div class="bg-color-3 color center"></div>
+                        </div>
+                    </div>
+                    <div id="apply" class="config-apply center">
+                        <p class="apply">Apply</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="boxMessage" class="center none">
+        <div  class=" message">
+            <div class="mesaage-txt">
+                <div class="text-interval-error">
+                    <p class="text-interval">
+                        Contador en marcha.
+                    </p>
+                </div>
+            </div>
+            <div class="box-info">
+                <p class="icon-red">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </p>
+                <div id="btnOk" class="btn-ok">
+                    <h3>ok</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <script src="assets/js/pomodoro/classController.js"></script>
+    <script src="assets/js/pomodoro/cronometro.js"></script>
+    <script src="assets/js/pomodoro/pomodoro.js"></script>
+    <script src="assets/js/pomodoro/localTime.js"></script>
+</html>

@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+}
+.logo{
+    grid-area: logo;
+}
+.logo_img{
+    height: 60px;
+}
+.box-options{
+    grid-area: options;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-registra{
+    background-color: rgb(255, 255, 255);
+}
+.box-iniSesion{
+    color: white;
+}
+.bars{
+    color: white;
+    cursor: pointer;
+}
+.space{
+    cursor: pointer;
+    margin-right: 15px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 300px;
+}
+
+
+.works{
+    grid-area: drive;
+}
+.eat{
+    grid-area: eat;
+}
+.car{
+    grid-area: travel;
+}
+.select{
+    border-bottom: 3px solid;
+}
+.title-op1{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 2.5em;
+    grid-area: title-op1;
+}
+
+.txt-space{
+ margin: 0px 20px;
+}
+.op1-text1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.01em;
+    font-weight: 300;
+    grid-area: op1-text1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+.box-driver {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    max-width: 750px;
+}
+
+.item {
+    padding: 10px;
+}
+.box-registro {
+    text-align: center;
+    min-width: 200px; 
+    max-width: 200px; 
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.box-know {
+    text-align: left;
+    font-size: 0.9em;
+    min-width: 340px;
+    max-width: 340px;
+}
+.border-a{
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid;
+}
+.a-wh{
+    text-decoration: none;
+    color: white;
+}
+.a-notDecoration{
+    text-decoration: none;
+    color: #000000;
+}
+.img-body{
+    width: 100vw; 
+    height: auto; 
+    z-index: 1;
+}
+.op2-txt1{
+    grid-area: op2-txt1;
+    position: relative;
+    top: 300px;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.op2-txt2{
+    grid-area: op2-txt2;
+    position: relative;
+    top: 210px;
+}
+.box-comenzar{
+    grid-area: comenzar;
+    background-color: #000000;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+    top:100px;
+}
+.box-carc{
+    margin-top: -250px;
+}
+.contCaracteristicas {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    max-width: 1000px;
+}
+.box-security {
+   margin-top: 50px;
+    font-size: 0.9em;
+    min-width: 50%;
+}
+.cities {
+    margin-bottom: 70px;
+    margin-left: 10px;
+    font-size: 0.9em;
+    min-width: 50%;
+}
+.img-carater{
+    width: 100%;
+    height: auto;
+}
+.box-img{
+    margin-right: 30px;
+}
+.margin{
+    margin-right: 10px;
+}
+.title-car{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.body-car{
+    font-size: 18px;
+}
+.border-a{
+    margin: 30px 0px;
+    width: fit-content;
+    padding: 10px;
+}
+.cityes{
+    margin-top: -20px;
+}
+.we{
+    font-size: 10px;
+}
+.box-nosotros{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+    max-width: 100vw;
+}
+.downloadApp {
+    margin-top: 10px;
+    border: 0.5px solid;
+    height: fit-content;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+.boxDowRight {
+    position: absolute;
+    right: 20px;
+    transition: right 0.5s;
+}
+.downloadApp:hover .boxDowRight {
+    right: 10px;
+}
+.registrate {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    max-width: 1000px;
+}
+.rgs {
+    min-width: 295px;
+    max-width: 1fr;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.boxRegRight {
+    position: relative;
+    margin-left: 10px; 
+}
+.box-end{
+    background-color: #000000;
+}
+.liks{
+    display: block;
+}
+.grid-end{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+    max-width: 100vw;
+}
+.grid-end-point{
+    min-width: 295px;
+    max-width: 1fr;
+}
+.logs {
+    margin: 50px 0px;
+    display: grid;
+    grid-template:  "empty-aa       face        twitter     youtube     linkedin    instagram   empty-qq"/
+                        .2fr       0.4fr       .4fr        .4fr        .4fr        .4fr         1fr;
+}
+
+.logo {
+    flex-grow: 1;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+}
+.face{
+    grid-area: face;
+}
+.twitter     {
+    grid-area: twitter;
+}
+.youtube     {
+    grid-area: youtube;
+}
+.linkedin    {
+    grid-area: linkedin;
+}
+.instagram{
+    grid-area: instagram;
+}
+.get-on{
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+.get{
+    margin-left: 30px;
+    width: 255px;
+
+}
+
+#copyright-text {
+    margin-left: 30px;
+    color: #b3b3b3;
+}
+.terms{
+    margin: 30px;
+    display: flex;
+    text-align: left;
+    padding-bottom: 100px;
+}
+.h-center{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.terminos{
+    width: 200px;
+}
+.header-company{
+    cursor: pointer;
+    grid-area: company;
+}
+.header-security{
+    grid-area: security;
+}
+.header-help{
+    grid-area: help;
+}
+.header-leng{
+    grid-area: leng;
+}
+.header-products{
+    grid-area: products;
+}
+@media screen and (min-width: 1021px){
+    .only-pc{
+        display: none;
+    }
+    .op-container{
+        display: grid;
+        grid-template: "empty-der   container-main      empty-hiz"/
+                        0.5fr          1150px            0.5fr;
+    }
+    .box-op1{
+        grid-area: container-main ;
+    }
+    .title-op1{
+        font-size: 50px;
+    }
+    .border-none{
+        border: none;
+    }
+    .container{
+        display: grid;
+        grid-template: 'header' 65px
+                        'box1' /
+                        100%;
+    }
+    .box-header{
+        background-color: black;
+        grid-area: header;
+        display: grid;
+        grid-template: 'empty-right     logo        company     security        help        empty-center        leng        products    options     empty-left'/                       
+                        2fr            100px        100px       100px           100px        1fr               120px       120px       250px         2fr;
+    }
+    .box_n1{
+        padding-top: 20px;
+        width: 580px;
+        height: 510px;
+        background-color: rgb(255, 255, 255);
+        grid-area: box1;
+        border-bottom: 0.5px solid rgb(7, 7, 7);
+        margin-top: 20px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        grid-template:  "empty-space       drive        empty-1          eat        empty-2       travel    empty-find"120px/
+                         1fr               80px         50px             80px        50px         80px      1fr;
+    }
+    .title{
+        width: 700px;
+        font-size: 3vh;
+        font-weight: 600;
+    }
+    .box-text-2{
+        
+        margin-top: 720px;
+        position: relative;
+        bottom: 300px;
+        z-index: -1;
+        width: 930px;
+        height: 570px;
+        background-image: url(../img/DotCom_Update_U4B_bg_mobileD.webp);
+        background-size: cover;
+        background-position-x: -800px;
+        background-position-y: 100px;
+        display: grid;
+        grid-template:  "op2-txt1 empty-limit"
+                        "op2-txt2 empty-limit"
+                        "comenzar empty-limit"/
+                        1fr       0.5fr  ;
+    }
+    .img-body{
+        display: none;
+    }
+    .box-img-body{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 99.2vw;
+        height: 700px;
+        top: 60px;
+       background-image: url(../img/DotCom_Update_Earner_bg2x.webp);
+       background-size: cover;
+       background-repeat: repeat;
+       background-position-x: 00px;
+       background-position-y: 0px;
+       margin-bottom: 30px;
+    }
+    .box-text1{
+        border-top: 1px solid #000000;
+        position: relative;
+        top: -391px;
+        width: 460px;
+        padding: 20px 40px 1px 40px;
+    }
+    .controler{
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+        max-width: 1000px;
+    }
+    .controler-box2{
+        min-width: 310px;
+    }
+    .downloadApp{
+        border: none;
+    }
+    .contDown{
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+        max-width: 1000px;
+    }
+    .box-end{
+        display: grid;
+        grid-template: "empty-der   endCont      empty-hiz"/
+                        1fr          1150px                1fr;
+    }
+    .endCont{
+        grid-area: endCont;
+    }
+    .und-Uber{
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        max-width: 1100px;
+    }
+    .grid-end{
+        display: flex;
+        min-width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 1020px) {
+    .only-cell{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template: 'header' 65px
+                        'box1' /
+                        100%;
+    }
+    .box-header{
+        background-color: black;
+        grid-area: header;
+        display: grid;
+        grid-template: 'empty-right     logo    empty-center    options     empty-left'/
+                        0.2fr            60px    1fr             250px       0.2fr;
+    }
+    .box_n1{
+        grid-area: box1;
+        border-bottom: 0.1px solid rgb(128, 128, 128);
+        margin-top: 20px;
+        text-align: center;
+        display: grid;
+        grid-template:  "empty-space       drive        empty-1          eat        empty-2             travel"100px/
+                         10px               80px        15px             80px        15px            80px;
+    }
+    .box-text-2{
+        margin-top: 20px;
+        position: relative;
+        bottom: 300px;
+        z-index: -1;
+        width: 100vw;
+        height: 570px;
+        background-image: url(../img/DotCom_Update_U4B_bg_mobileD.webp);
+        background-size: cover;
+        background-position-x: -600px;
+        background-position-y: 80px;
+        display: grid;
+        grid-template:  "op2-txt1 empty-limit"
+                        "op2-txt2 empty-limit"
+                        "comenzar empty-limit"/
+                        1fr       0.1fr  ;
+    }
+    .box-text1{
+        background-color: rgb(240, 248, 255);
+        z-index: 1;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+/* menus ocultos */
+.boxtop {
+    display: grid;
+    position: fixed;
+    top: 70px;
+    z-index: 999; 
+}
+
+
+ 
+.selections {
+    position: relative;
+    grid-area: header;
+    display: grid;   
+    grid-template:
+        'empty1         empty2       menuCom            empty9          empty8          empty7           empty6              scroll      empty10      empty4'/
+        1%             110px        100px              220px           100px           1fr               120px              120px       250px         2fr;
+    gap: 10px; 
+}
+
+.compnia{
+    
+    grid-area: menuCom;
+    background-color: rgb(255, 255, 255);
+    height: 240px;
+    width: 230px;
+    border-radius: 5px;
+}
+.comp-link{
+    padding-top: 10px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: 900;
+
+}
+.txt-men{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12.9px;
+}
+.sombra{
+    box-shadow: 0px 0px 42px -22px rgba(0,0,0,1);
+}
+
+.products-uber {
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+.products-uber{
+    grid-area: scroll;
+    background-color: rgb(252, 252, 252);
+    height: 240px;
+    width: 230px;
+    border-radius: 5px;
+}
+.allView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+.grid-menu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-Grid {
+    cursor: pointer;
+    border-bottom: 2px solid;
+    display: flex;
+    padding: 30px;
+    width: 700px;
+    align-items: center;
+    font-size: 60px;
+}
+
+.box {
+    font-size: 50px;
+    margin-left: 60px;
+}
+.exit-sesion{
+    cursor: pointer;
+    font-size: 80px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.none{
+    display: none;
+}
+.miIdioma{
+    font-size: 90px;
+}
